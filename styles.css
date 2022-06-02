@@ -1,0 +1,79 @@
+h2 {
+  color: #020438;
+  font-family: "Lora", serif;
+  font-size: 500px bold;
+}
+
+.container-border {
+  border: 4px solid #2772db;
+}
+
+button {
+  color: #2772db;
+}
+
+#current {
+  background-color: #020438;
+  margin-left: 20px;
+}
+
+body {
+  padding: 100px 0 100px;
+}
+
+h1 {
+  position: static;
+  text-align: right;
+  font-size: 15px !important;
+}
+
+h3 {
+  color: #020438;
+  font-family: "Lora", serif;
+  text-align: center;
+  display: inline-block;
+}
+
+.emoji {
+  text-align: center;
+  display: inline-block;
+}
+
+.temperature {
+  color: #020438;
+  font-family: "Lora", serif;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.day {
+  font-size: 19px;
+  color: #020438;
+  font-family: "Lora", serif;
+  text-align: center;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+.bottom-div {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: center;
+  display: inline-block;
+}
+
+.top-div {
+  margin-top: 20px;
+}
+
+body {
+  background: linear-gradient(
+    178.6deg,
+    rgb(232, 245, 253) 3.3%,
+    rgb(252, 253, 255) 109.6%
+  );
+}
