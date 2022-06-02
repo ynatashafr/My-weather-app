@@ -77,3 +77,8 @@ body {
     rgb(252, 253, 255) 109.6%
   );
 }
+
+.githubURL {
+  text-align: center;
+  display: inline-block;
+}
