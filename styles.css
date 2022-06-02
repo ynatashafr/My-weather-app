@@ -79,6 +79,5 @@ body {
 }
 
 .githubURL {
-  text-align: center;
-  display: inline-block;
+  margin-left: 20px;
 }
