@@ -38,6 +38,7 @@ function search(event) {
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
+  celsiusTemperature = temperature;
   let humidity = Math.round(response.data.main.humidity);
   let visibility = Math.round(response.data.visibility);
   let wind = Math.round(response.data.wind.speed);
