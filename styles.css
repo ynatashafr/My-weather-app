@@ -12,11 +12,6 @@ button {
   color: #2772db;
 }
 
-#current {
-  background-color: #020438;
-  margin-left: 20px;
-}
-
 body {
   padding: 100px 0 100px;
 }
@@ -44,7 +39,7 @@ h3 {
   font-family: "Lora", serif;
   text-align: center;
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .day {
