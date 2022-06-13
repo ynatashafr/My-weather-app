@@ -50,7 +50,7 @@ function showTemperature(response) {
   let visibilityElement = document.querySelector("#visibility");
   let windElement = document.querySelector("#wind");
   let descriptionElement = document.querySelector("#description");
-  temperatureElement.innerHTML = `${temperature}°C`;
+  temperatureElement.innerHTML = `${temperature}`;
   humidityElement.innerHTML = `${humidity}%`;
   visibilityElement.innerHTML = `${visibility}`;
   windElement.innerHTML = `${wind}km/h`;
