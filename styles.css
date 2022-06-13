@@ -81,3 +81,12 @@ body {
 .github-url {
   text-align: center;
 }
+
+.temperature .active {
+  color: #020438;
+  cursor: default;
+}
+
+.temperature .active:hover {
+  text-decoration: none;
+}
