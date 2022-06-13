@@ -47,11 +47,17 @@ function showTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let visibilityElement = document.querySelector("#visibility");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
   let descriptionElement = document.querySelector("#description");
   temperatureElement.innerHTML = `${temperature}`;
   humidityElement.innerHTML = `${humidity}%`;
   visibilityElement.innerHTML = `${visibility}`;
   windElement.innerHTML = `${wind}km/h`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
   descriptionElement.innerHTML = `${description}`;
 }
 
