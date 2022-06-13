@@ -36,9 +36,6 @@ function search(event) {
   getCityTemp(searchInput.value);
 }
 
-let form = document.querySelector("#search-input");
-form.addEventListener("submit", search);
-
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let humidity = Math.round(response.data.main.humidity);
@@ -76,11 +73,14 @@ function displayFahrenheitTemperature(event) {
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
-  let.fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = math.round(fahrenheitTemperature);
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let celsiusTemperature = null;
+
+let form = document.querySelector("#search-input");
+form.addEventListener("submit", search);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
