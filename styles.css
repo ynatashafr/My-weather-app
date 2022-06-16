@@ -54,11 +54,18 @@ ul {
   list-style: none;
 }
 
-.bottom-div {
+.weather-forecast {
   margin-bottom: 20px;
   margin-top: 15px;
   text-align: center;
-  display: inline-block;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
 }
 
 .top-div {
