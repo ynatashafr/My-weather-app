@@ -44,20 +44,20 @@ function displayForecast() {
     forecastHTML =
       forecastHTML +
       `
-                        <div class="col-2">
-                            <div class="weather-forecast-date">
-                                ${day}</div>
-                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42" />
-                            <div class="weather-forecast-temperature">
-                                <span class="weather-forecast-temperature-max">
-                                    24°
-                                </span>
-                                <span class="weather-forecast-temperature-min">
-                                    18°
-                                </span>
-                            </div>
-                        </div>
-        
+      <div class="col-2">
+          <div class="weather-forecast-date">
+              ${day}</div>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42" />
+          <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">
+                  24°
+              </span>
+              <span class="weather-forecast-temperature-min">
+                  18°
+              </span>
+          </div>
+      </div>
+
 `;
   });
   forecastHTML = forecastHTML + `</div>`;
