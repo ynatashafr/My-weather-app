@@ -31,8 +31,6 @@ function search(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#example-inputCity1");
 
-  let h3 = document.querySelector("#city");
-  h3.innerHTML = `${searchInput.value}`;
   getCityTemp(searchInput.value);
 }
 
@@ -86,6 +84,8 @@ function getForecast(coordinates) {
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
+  let h3 = document.querySelector("#city");
+  h3.innerHTML = response.data.name;
   celsiusTemperature = temperature;
   let humidity = Math.round(response.data.main.humidity);
   let visibility = Math.round(response.data.visibility);
@@ -116,6 +116,8 @@ function getCityTemp(city) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
+
+getCityTemp("New York");
 
 let form = document.querySelector("#search-input");
 form.addEventListener("submit", search);
